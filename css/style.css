@@ -11,13 +11,13 @@
 .playerTwoInput{
     height: 40px;
     width: 400px;
-    border: 2px solid tomato;
+    border: 2px solid #0E6655;
     margin-top: 20px;
 }
 .playerOneBtn,
 .playerTwoBtn{
     padding: 13px 40px;
-    background-color: tomato;
+    background-color: #0E6655;
     border: 2px solid transparent;
     color: white;
 }

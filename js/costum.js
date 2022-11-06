@@ -42,11 +42,19 @@ playerTwoBtn.addEventListener("click", function(e){
         if(playerTwoInput.value - 10){
             if(playerTwoInput.value > 0 && playerTwoInput.value < 10){
                 playerTwoError.innerHTML = ""
-                if(playerNumber == playerTwoInput.value){
-                    console.log("ok");
+                ChanceNumber --
+                if(ChanceNumber !== 0){
+                    if(playerNumber == playerTwoInput.value){
+                        playerTwoError.innerHTML = "Player Two Winner"
+                        playerTwoError.style.color = "green"
+                    }else{
+                        Chance.innerHTML = ChanceNumber
+                    }
                 }else{
-                    console.log("not ok");
+                    playerTwoError.innerHTML = "Player One Winner"
+                    Chance.innerHTML = "Gmane Over"
                 }
+                
             }else{
                 playerTwoError.innerHTML = "Enter The Value 1 to 10"
             }
