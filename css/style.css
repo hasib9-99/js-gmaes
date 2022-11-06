@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    text-align: center;
+}input::placeholder{
+    padding: 0 10px;
+}
+.playerOneInput,
+.playerTwoInput{
+    height: 40px;
+    width: 400px;
+    border: 2px solid tomato;
+    margin-top: 20px;
+}
+.playerOneBtn,
+.playerTwoBtn{
+    padding: 13px 40px;
+    background-color: tomato;
+    border: 2px solid transparent;
+    color: white;
+}
+.playerOneError,
+.playerTwoError{
+    color: red;
+    padding-top: 20px;
+}
+.playerTwo{
+    display: none;
+}
